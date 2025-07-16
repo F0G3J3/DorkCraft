@@ -26,9 +26,9 @@ Built by none other than **Dr.F0G3J3**, this sleek, intuitive, and **blazing-fas
 
 1.  **Clone this repository:**
     ```bash
-    git clone [https://github.com/DrF0G3J3/DorkCraft.git](https://github.com/DrF0G3J3/DorkCraft.git)
+    git clone [https://github.com/F0G3J3/DorkCraft.git](https://github.com/F0G3J3/DorkCraft.git)
     ```
-    (Replace `DrF0G3J3` with your GitHub username if you fork it!)
+    (Replace `F0G3J3` with your GitHub username if you fork it!)
 2.  **Navigate to the project directory:**
     ```bash
     cd DorkCraft
