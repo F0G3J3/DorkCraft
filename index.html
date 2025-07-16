@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DorkCraft - Advanced Dork Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>DorkCraft</h1>
+        <p>Build powerful search engine dorks with ease.</p>
+    </header>
+
+    <main class="container">
+        <section class="dork-builder-section">
+            <h2>🔎 Dork Builder</h2>
+
+            <div class="input-group">
+                <label for="searchEngine">Select Search Engine:</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="google" name="searchEngine" value="google" checked>
+                    <label for="google">Google</label>
+                    <input type="radio" id="bing" name="searchEngine" value="bing">
+                    <label for="bing">Bing</label>
+                    <input type="radio" id="duckduckgo" name="searchEngine" value="duckduckgo">
+                    <label for="duckduckgo">DuckDuckGo</label>
+                    <input type="radio" id="yandex" name="searchEngine" value="yandex">
+                    <label for="yandex">Yandex</label>
+                    </div>
+            </div>
+
+            <div class="input-group">
+                <label for="keywords">Keywords (space separated, use quotes for phrases):</label>
+                <input type="text" id="keywords" placeholder="e.g., 'confidential document' 'login panel'">
+            </div>
+
+            <div class="operators-section">
+                <h3>Common Operators:</h3>
+                <div class="operator-checkboxes">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="operator-site" data-operator="site" data-placeholder="example.com | .gov">
+                        <label for="operator-site">site:</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="operator-inurl" data-operator="inurl" data-placeholder="admin | login">
+                        <label for="operator-inurl">inurl:</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="operator-intitle" data-operator="intitle" data-placeholder="index of | 'private area'">
+                        <label for="operator-intitle">intitle:</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="operator-filetype" data-operator="filetype" data-placeholder="pdf | docx | xlsx">
+                        <label for="operator-filetype">filetype:</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="operator-intext" data-operator="intext" data-placeholder="password | username">
+                        <label for="operator-intext">intext:</label>
+                    </div>
+                     <div class="checkbox-item">
+                        <input type="checkbox" id="operator-link" data-operator="link" data-placeholder="example.com">
+                        <label for="operator-link">link:</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="operator-cache" data-operator="cache" data-placeholder="example.com">
+                        <label for="operator-cache">cache:</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="operator-related" data-operator="related" data-placeholder="example.com">
+                        <label for="operator-related">related:</label>
+                    </div>
+                    </div>
+                <div id="operatorInputs" class="operator-inputs-container">
+                    </div>
+            </div>
+
+            <div class="output-section">
+                <h3>Generated Dork:</h3>
+                <textarea id="dorkOutput" rows="5" readonly></textarea>
+                <button id="copyDorkBtn" class="btn"><i class="fas fa-copy"></i> Copy Dork</button>
+                <a id="searchDorkBtn" class="btn btn-primary" target="_blank" href="#"><i class="fas fa-search"></i> Search Dork</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DorkCraft. Built by Dr.F0G3J3.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
